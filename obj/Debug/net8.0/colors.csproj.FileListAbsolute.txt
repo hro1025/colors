@@ -1,0 +1,17 @@
+C:\Users\hro10\Desktop\C#\oppgave 2\colors\bin\Debug\net8.0\colors.exe
+C:\Users\hro10\Desktop\C#\oppgave 2\colors\bin\Debug\net8.0\colors.deps.json
+C:\Users\hro10\Desktop\C#\oppgave 2\colors\bin\Debug\net8.0\colors.runtimeconfig.json
+C:\Users\hro10\Desktop\C#\oppgave 2\colors\bin\Debug\net8.0\colors.dll
+C:\Users\hro10\Desktop\C#\oppgave 2\colors\bin\Debug\net8.0\colors.pdb
+C:\Users\hro10\Desktop\C#\oppgave 2\colors\bin\Debug\net8.0\Spectre.Console.dll
+C:\Users\hro10\Desktop\C#\oppgave 2\colors\obj\Debug\net8.0\colors.csproj.AssemblyReference.cache
+C:\Users\hro10\Desktop\C#\oppgave 2\colors\obj\Debug\net8.0\colors.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hro10\Desktop\C#\oppgave 2\colors\obj\Debug\net8.0\colors.AssemblyInfoInputs.cache
+C:\Users\hro10\Desktop\C#\oppgave 2\colors\obj\Debug\net8.0\colors.AssemblyInfo.cs
+C:\Users\hro10\Desktop\C#\oppgave 2\colors\obj\Debug\net8.0\colors.csproj.CoreCompileInputs.cache
+C:\Users\hro10\Desktop\C#\oppgave 2\colors\obj\Debug\net8.0\colors.csproj.Up2Date
+C:\Users\hro10\Desktop\C#\oppgave 2\colors\obj\Debug\net8.0\colors.dll
+C:\Users\hro10\Desktop\C#\oppgave 2\colors\obj\Debug\net8.0\refint\colors.dll
+C:\Users\hro10\Desktop\C#\oppgave 2\colors\obj\Debug\net8.0\colors.pdb
+C:\Users\hro10\Desktop\C#\oppgave 2\colors\obj\Debug\net8.0\colors.genruntimeconfig.cache
+C:\Users\hro10\Desktop\C#\oppgave 2\colors\obj\Debug\net8.0\ref\colors.dll
