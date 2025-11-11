@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("colors")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c423cd4d6c180a1a4859d0723de1d24c5b33adb0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+480ad793ad3e263b5356b440796d48cfa6f4b577")]
 [assembly: System.Reflection.AssemblyProductAttribute("colors")]
 [assembly: System.Reflection.AssemblyTitleAttribute("colors")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
