@@ -1,4 +1,5 @@
 ﻿using System.Globalization;
+using System.Reflection.Metadata.Ecma335;
 using Spectre.Console;
 
 namespace colors;
@@ -36,26 +37,31 @@ class Program
                 while (true)
                 {
                     AnsiConsole.MarkupLine("Hva med din alder?");
+                    // var alder = AnsiConsole.Ask<int>("");
                     string? alder = Console.ReadLine();
 
                     if (int.TryParse(alder, out dinAlder))
                     {
-                        break;
-                    }
-                    else if (dinAlder < 16)
-                    {
-                        AnsiConsole.MarkupLine(
-                            "[bold red]Du er desverre ikke gammel nok til å få farge\nProgrammet vil avslutte automatisk etter 3 sekunder[/]"
-                        );
-                        Thread.Sleep(2500);
-                        Environment.Exit(0);
-                    }
-                    else
-                    {
-                        AnsiConsole.MarkupLine(
-                            "[bold red]Det er kun tall!!![/]Vent litt å prøv på nytt"
-                        );
-                        Thread.Sleep(1000);
+                        if (dinAlder <= 15)
+                        {
+                            AnsiConsole.MarkupLine(
+                                "[bold red]Du er desverre ikke gammel nok til å få farge\nProgrammet vil avslutte automatisk etter 3 sekunder[/]"
+                            );
+                            Thread.Sleep(2500);
+                            Environment.Exit(0);
+                        }
+                        else if (dinAlder >= 16)
+                        {
+                            break;
+                        }
+                        else
+                        {
+                            AnsiConsole.MarkupLine(
+                                "[bold red]Det er kun tall!!![/]Vent litt å prøv på nytt"
+                            );
+
+                            Thread.Sleep(1000);
+                        }
                     }
                 }
 
@@ -83,14 +89,56 @@ class Program
                 AnsiConsole.MarkupLine(" [green] Finished[/]");
                 Thread.Sleep(500);
                 // here will the programm choose where user belongs to based on the age
+
+                Table table = new Table();
+                table.Border(TableBorder.Rounded);
+                table.Title("Colors");
+                table.ShowRowSeparators();
+                table.AddColumn("Navn");
+                table.AddColumn("Alder");
+                table.AddColumn("Sted");
+                table.AddColumn("Farge");
+                table.Centered();
+
                 switch (dinAlder)
                 {
-                    case < 20:
+                    case >= 16 and <= 25:
                     {
-                        Console.WriteLine("good");
+                        string? farge = "blå";
+                        table.AddRow($"{name}", $"{dinAlder}", $"{bor}", $"{farge}");
+                        table.BorderColor(Color.Blue);
+                        break;
+                    }
+                    case >= 26 and <= 45:
+                    {
+                        string? farge = "Gul";
+                        table.AddRow($"{name}", $"{dinAlder}", $"{bor}", $"{farge}");
+                        table.BorderColor(Color.Yellow);
+                        break;
+                    }
+                    case >= 46 and <= 75:
+                    {
+                        string? farge = "Grøn";
+                        table.AddRow($"{name}", $"{dinAlder}", $"{bor}", $"{farge}");
+                        table.BorderColor(Color.Green);
+                        break;
+                    }
+                    case >= 76 and <= 99:
+                    {
+                        string? farge = "pink1";
+                        table.AddRow($"{name}", $"{dinAlder}", $"{bor}", $"{farge}");
+                        table.BorderColor(Color.Pink1);
+                        break;
+                    }
+                    default:
+                    {
+                        AnsiConsole.MarkupLine("[bold red]Du er DØD :)[/]");
                         break;
                     }
                 }
+
+                AnsiConsole.Write(table);
+                Console.ReadKey();
 
                 repeatProgram = false;
             }
