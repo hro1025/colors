@@ -42,9 +42,20 @@ class Program
                     {
                         break;
                     }
+                    else if (dinAlder < 16)
+                    {
+                        AnsiConsole.MarkupLine(
+                            "[bold red]Du er desverre ikke gammel nok til å få farge\nProgrammet vil avslutte automatisk etter 3 sekunder[/]"
+                        );
+                        Thread.Sleep(2500);
+                        Environment.Exit(0);
+                    }
                     else
                     {
-                        AnsiConsole.MarkupLine("[bold red]Det er kun tall!!![/]");
+                        AnsiConsole.MarkupLine(
+                            "[bold red]Det er kun tall!!![/]Vent litt å prøv på nytt"
+                        );
+                        Thread.Sleep(1000);
                     }
                 }
 
@@ -71,7 +82,7 @@ class Program
 
                 AnsiConsole.MarkupLine(" [green] Finished[/]");
                 Thread.Sleep(500);
-
+                // here will the programm choose where user belongs to based on the age
                 switch (dinAlder)
                 {
                     case < 20:
@@ -91,19 +102,6 @@ class Program
                 );
                 Thread.Sleep(2500);
             }
-
-            // input: here will the user write down the name
-
-            // output: here will it ask how old the user is
-            // input: here will the user write down how old the user is
-
-            // if: is the age under 16 it will say the user is not old enough
-            // if else: it will continue the program
-
-            //output: here will the programm ask where the user lives
-            //input: here will the write down the answer
-
-            //here will the user be set into an color depends on what input the program got
         }
     }
 }
