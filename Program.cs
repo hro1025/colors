@@ -37,9 +37,9 @@ class Program
                 while (true)
                 {
                     AnsiConsole.MarkupLine("Hva med din alder?");
-                    // var alder = AnsiConsole.Ask<int>("");
-                    string? alder = Console.ReadLine();
 
+                    string? alder = Console.ReadLine();
+                    // here will the programm check if it can convert the styring to int, if it succeed the programm will continue
                     if (int.TryParse(alder, out dinAlder))
                     {
                         if (dinAlder <= 15)
@@ -97,7 +97,7 @@ class Program
                 table.AddColumn("Sted");
                 table.AddColumn("Farge");
                 table.Centered();
-
+                // here will the programm take the user into an category
                 switch (dinAlder)
                 {
                     case >= 16 and <= 25:
