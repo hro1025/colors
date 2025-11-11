@@ -44,19 +44,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\roani\\.nuget\\packages\\": {}
+    "C:\\Users\\hro10\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\roani\\Desktop\\C#\\colors\\colors\\colors.csproj",
+      "projectUniqueName": "C:\\Users\\hro10\\Desktop\\C#\\oppgave 2\\colors\\colors.csproj",
       "projectName": "colors",
-      "projectPath": "C:\\Users\\roani\\Desktop\\C#\\colors\\colors\\colors.csproj",
-      "packagesPath": "C:\\Users\\roani\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\roani\\Desktop\\C#\\colors\\colors\\obj\\",
+      "projectPath": "C:\\Users\\hro10\\Desktop\\C#\\oppgave 2\\colors\\colors.csproj",
+      "packagesPath": "C:\\Users\\hro10\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\hro10\\Desktop\\C#\\oppgave 2\\colors\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\roani\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\hro10\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"

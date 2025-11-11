@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "vcuoxWUR74M=",
+  "dgSpecHash": "+tkwkP80bbc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\roani\\Desktop\\C#\\colors\\colors\\colors.csproj",
+  "projectFilePath": "C:\\Users\\hro10\\Desktop\\C#\\oppgave 2\\colors\\colors.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\roani\\.nuget\\packages\\spectre.console\\0.53.0\\spectre.console.0.53.0.nupkg.sha512"
+    "C:\\Users\\hro10\\.nuget\\packages\\spectre.console\\0.53.0\\spectre.console.0.53.0.nupkg.sha512"
   ],
   "logs": []
 }
