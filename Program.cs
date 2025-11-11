@@ -54,14 +54,14 @@ class Program
                         {
                             break;
                         }
-                        else
-                        {
-                            AnsiConsole.MarkupLine(
-                                "[bold red]Det er kun tall!!![/]Vent litt å prøv på nytt"
-                            );
+                    }
+                    else
+                    {
+                        AnsiConsole.MarkupLine(
+                            "[bold red]Det er kun tall!!![/]Vent litt å prøv på nytt"
+                        );
 
-                            Thread.Sleep(1000);
-                        }
+                        Thread.Sleep(1000);
                     }
                 }
 
@@ -77,13 +77,11 @@ class Program
                 Thread.Sleep(200);
                 AnsiConsole.Markup("-");
                 Thread.Sleep(200);
-                AnsiConsole.Markup("-");
+                AnsiConsole.Markup("----------");
                 Thread.Sleep(200);
-                AnsiConsole.Markup("-");
+                AnsiConsole.Markup("------------------");
                 Thread.Sleep(200);
-                AnsiConsole.Markup("-");
-                Thread.Sleep(200);
-                AnsiConsole.Markup("-");
+                AnsiConsole.Markup("-------------------------");
                 Thread.Sleep(200);
 
                 AnsiConsole.MarkupLine(" [green] Finished[/]");
@@ -106,7 +104,9 @@ class Program
                     {
                         string? farge = "blå";
                         table.AddRow($"{name}", $"{dinAlder}", $"{bor}", $"{farge}");
+
                         table.BorderColor(Color.Blue);
+
                         break;
                     }
                     case >= 26 and <= 45:
@@ -125,14 +125,16 @@ class Program
                     }
                     case >= 76 and <= 99:
                     {
-                        string? farge = "pink1";
+                        string? farge = "Rosa";
                         table.AddRow($"{name}", $"{dinAlder}", $"{bor}", $"{farge}");
                         table.BorderColor(Color.Pink1);
                         break;
                     }
                     default:
                     {
-                        AnsiConsole.MarkupLine("[bold red]Du er DØD :)[/]");
+                        //  string? farge = "Rød";
+                        table.AddRow($"Du", $"Er", $"DØD", $"!!!!");
+                        table.BorderColor(Color.Red);
                         break;
                     }
                 }
