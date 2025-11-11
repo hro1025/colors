@@ -15,3 +15,4 @@ C:\Users\hro10\Desktop\C#\oppgave 2\colors\obj\Debug\net8.0\refint\colors.dll
 C:\Users\hro10\Desktop\C#\oppgave 2\colors\obj\Debug\net8.0\colors.pdb
 C:\Users\hro10\Desktop\C#\oppgave 2\colors\obj\Debug\net8.0\colors.genruntimeconfig.cache
 C:\Users\hro10\Desktop\C#\oppgave 2\colors\obj\Debug\net8.0\ref\colors.dll
+C:\Users\hro10\Desktop\C#\oppgave 2\colors\obj\Debug\net8.0\colors.sourcelink.json
