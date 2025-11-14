@@ -12,7 +12,7 @@ class Program
 
         while (repeatProgram)
         {
-            // output by the programm (saying hello and ask if you are ready to find your color)
+            // output by the program (saying hello and ask if you are ready to find your color)
             AnsiConsole.MarkupLine(
                 "[bold]Heisann og velkommen til COLORS![/]\nEr du klar til å finne ut fargen din? ([bold]ja [/]eller [bold]nei[/])"
             );
@@ -28,7 +28,7 @@ class Program
                 Thread.Sleep(2500);
                 Environment.Exit(0);
             }
-            // else if 'ja': will the programm continue and ask for the users name
+            // else if 'ja': will the program continue and ask for the users name
             else if (input == "ja" || input == "Ja")
             {
                 AnsiConsole.MarkupLine("[bold]Great[/], lets go :)\nHva er navnet ditt?");
@@ -39,7 +39,7 @@ class Program
                     AnsiConsole.MarkupLine("Hva med din alder?");
 
                     string? alder = Console.ReadLine();
-                    // here will the programm check if it can convert the styring to int, if it succeed the programm will continue
+                    // here will the program check if it can convert the styring to int, if it succeed the programm will continue
                     if (int.TryParse(alder, out dinAlder))
                     {
                         if (dinAlder <= 15)
@@ -86,7 +86,7 @@ class Program
 
                 AnsiConsole.MarkupLine(" [green] Finished[/]");
                 Thread.Sleep(500);
-                // here will the programm choose where user belongs to based on the age
+                // here will the program choose where user belongs to based on the age
 
                 Table table = new Table();
                 table.Border(TableBorder.Rounded);
@@ -97,7 +97,7 @@ class Program
                 table.AddColumn("Sted");
                 table.AddColumn("Farge");
                 table.Centered();
-                // here will the programm take the user into an category
+                // here will the program take the user into an category
                 switch (dinAlder)
                 {
                     case >= 16 and <= 25:
